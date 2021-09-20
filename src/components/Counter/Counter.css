@@ -1,0 +1,36 @@
+.counter {
+  border: solid 3px hsl(255, 100%, 25%);
+  border-radius: 3px;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px;
+}
+
+.count {
+  grid-row: span 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggles {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter > button {
+  border: none;
+  /* color: #fff; */
+  color: hsl(255, 100%, 25%);
+  font-size: 1.4rem;
+  /* height: 1.5rem; */
+  outline: none;
+  width: 1.5rem;
+  background-color: #fff;
+}
+.counter > button:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
