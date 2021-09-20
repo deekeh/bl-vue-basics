@@ -1,10 +1,15 @@
 <template>
-  <section class="counter">
+  <section
+    class="counter"
+    :class="[exceeding == 1 ? 'upper' : exceeding == -1 ? 'lower' : '']"
+  >
     <span class="count">{{ count }}</span>
-    <!-- <div class="toggles"> -->
-    <button class="incrementor" @click="increment()">+</button>
-    <button class="incrementor" @click="count--">-</button>
-    <!-- </div> -->
+    <button :disabled="count >= 10" class="incrementor" @click="increment()">
+      +
+    </button>
+    <button :disabled="count <= 0" class="incrementor" @click="count--">
+      -
+    </button>
   </section>
 </template>
 
