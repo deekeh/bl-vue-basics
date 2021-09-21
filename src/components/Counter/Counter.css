@@ -22,20 +22,16 @@
 
 /* styling to incrementor and decrementor buttons */
 .counter > button {
-  border: none;
-  /* color: #fff; */
-  color: hsl(255, 100%, 25%);
   background-color: hsl(255, 100%, 95%);
+  border: none;
+  color: hsl(255, 100%, 25%);
   font-size: 1.4rem;
-  /* height: 1.5rem; */
   outline: none;
   width: 1.5rem;
-  /* background-color: #fff; */
 }
 .counter > button:hover {
-  cursor: pointer;
-  /* background-color: #ddd; */
   background-color: hsl(255, 100%, 90%);
+  cursor: pointer;
 }
 .counter > button:disabled {
   background-color: #ddd;
