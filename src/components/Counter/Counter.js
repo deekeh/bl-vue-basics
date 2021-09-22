@@ -7,6 +7,18 @@ export default {
       count: 3,
     };
   },
+  beforeCreate() {
+    console.log("before create");
+  },
+  beforeMount() {
+    console.log("before mount");
+  },
+  created() {
+    console.log("created");
+  },
+  mounted() {
+    console.log("mounted");
+  },
   computed: {
     // check if the count is reaching failure or outstanding grade
     exceeding() {
